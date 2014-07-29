@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Set all parents to full height */
+html, body, 
+.container,
+.cbp-fbscroller,
+.cbp-fbscroller section { 
+	height: 100%;
+}
+
+/* The nav is fixed on the right side  and we center it by translating it 50% 
+(we don't know it's height so we can't use the negative margin trick) */
+            #nav{ width: 100%; line-height:  10px; position: absolute; top:550px; left: 0px; z-index:100; text-align:center;}
+            ul{ list-style: none;}
+            li{ float: left; margin: 0 20px;}
+
+
+.cbp-fbscroller > nav {
+	position: absolute;
+	z-index: 9999;
+	right: 100px;
+    bottom: 0;
+	width: 26px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.cbp-fbscroller > nav a {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	color: transparent;
+	width: 26px;
+	height: 26px;
+	outline: none;
+	margin: 25px 0;
+	border-radius: 50%;
+	border: 4px solid #fff;
+}
+
+.no-touch .cbp-fbscroller > nav a:hover {
+	background: rgba(255,255,255,0.6);
+}
+
+.cbp-fbscroller > nav a.cbp-fbcurrent {
+	background: #fff;
+}
+
+/* background-attachment does the trick */
+.cbp-fbscroller section {
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.no-touch .cbp-fbscroller section {
+	background-attachment: fixed;
+}
+#fbsection1, #fbsection3, #fbsection5, #fbsection7 {
+	background: #fff;
+}
+
+#fbsection2, #fbsection4,  #fbsection6,  #fbsection8 {
+background: rgb(242,245,246); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZjVmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iI2UzZWFlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjOGQ3ZGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top, rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-8 */;
+}
+
+
+
+#fbsection1, #fbsection2, #fbsection3, #fbsection4, #fbsection5 {
+}
+
+.center {
+	position: relative;
+     width: 80%;
+}
+
+img#logo {
+	width:50%;
+	margin-left:25%;
+}
+#nav a {
+	display: inline-block;
+	border-bottom:#666 1px solid;
+	margin-right:2em;
+	padding:0.5em;
+}
+ a.cbp-fbcurrent {
+	 color:#ee801d;
+	 	border-bottom:#ee801d 1px solid!important;
+
+	 
+ }
+ 
+#fbsection4 div.center {
+	border:#fff 1px solid;
+}
+
+.center1 {
+	position: relative;
+	width: 80%;
+	margin-top:-14em;
+}
+.center2 {
+	position: relative;
+    width: 80%;
+	margin-top:-18em;
+	background:#FFF;
+}
+
+h1 {
+	font-size:2em;
+	padding-top:3em;
+	color:#ee801d;
+	display:inline-block;
+	text-align:center;
+    width: 100%;
+	font-weight:100;
+}
+
+#loc {
+	width:40%;
+	display:inline-block;
+	float:left;
+	text-align:right;
+}
+#contact {
+	width:30%;
+	display:inline-block;
+	float:left;
+	text-align:left;
+}
+
+img#crystal {
+	height:150px;
+}
+
+.left {
+	width:50%;
+	display:inline-block;
+	float:left;
+	text-align:right;
+	position:relative;
+}
+.right {
+	width:40%;
+	display:inline-block;
+	float:left;
+	text-align:left;
+	margin-left: 1em;
+	position:relative;
+}
+
+/* === Essential styles === */
+
+.helium-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.95);
+  z-index: 2000;
+  display: none;
+}
+
+.helium-modal .modal {
+  position: absolute;
+  left: -9999px;
+}
+
+.helium-modal li{
+	list-style-type: disc;
+}
+.helium-modal ul{
+margin:0
+}
+
+
+/* === customizable styles === */
+
+
+.helium-modal .modal {
+  padding: 20px;
+}
+
+.helium-modal .modal a.x-button {
+  position: absolute;
+  top: 3px;
+  right: 6px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+#myCanvasContainer {
+/*	background:#CCC;
+*/	
+
+
+width:40%;
+	padding: 1em 0 0 25%;
+}
+
+.pname {
+	text-align:center;
+	padding-top: 7em;
+}
+
+.pname span{
+	padding:0.3em 3em 0.1em 3em;
+	font-size:2em;
+	color:#ee801d;
+	display:inline-block;
+	text-align:center;
+    
+	font-weight:100;
+
+}
+
+img#stone {
+	position:absolute;
+	margin-top:-350px;
+	margin-left:33%;
+	z-index:0;
+	width:400px;
+	
+}
+canvas {
+	position:relative;
+	z-index:5;
+}
+
+.services {
+	margin:1em 3em 3em 3em;
+
+}
+.services li{
+	float:none;
+	list-style-type:disc;
+	list-style-position:outside;
+}
+.nav2 {
+	display: inline-block;
+	position:absolute;
+	bottom:1em;
+	margin:1em 0em 0 0em;
+	padding: 0em 3em;
+	width:100%;
+    border-top: #CCC 1px solid;
+
+}
+.nav2 a {
+	display: inline-table;
+	margin-right:1em;
+	margin-bottom:0.5em;
+	margin-top:2em;
+	font-size:0.7em;
+	color:#ee801d;
+}
+
+#nav3{ width: 100%; line-height:  10px; position: fixed; top:0em; left: 0px; z-index:100; text-align:center; background:rgba(255,255,255,0.5); padding:2em 0 0.5em 0;}
+#nav3 a {
+	display: inline-block;
+	border-bottom:#666 1px solid;
+	margin-right:2em;
+	padding:0.5em;
+}
+
+
+/*-----------29------*/
+.right_col {
+	position:relative;
+	width:73%;
+	float:left;
+	left:2%;
+	margin-bottom: 3em;
+}
+.left_col {
+	position:relative;
+	float:left;
+	width:25%;
+	margin-top: 1em;
+	line-height:0;
+}
+
+ .leftimg {
+    float: none; 
+	margin-bottom:0.2em;
+	
+   }
+   .right_col1 {
+	position:relative;
+	width:40%;
+	float:left;
+	left:19%;
+	margin-bottom: 3em;
+}
+.left_col1 {
+	position:relative;
+	float:left;
+	width:26%;
+	left:17%;
+	margin-bottom: 2em;
+	line-height:0;
+}
+
